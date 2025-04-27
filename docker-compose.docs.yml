@@ -1,0 +1,16 @@
+services:
+  docs:
+    image: ready_for_fair_local_docs
+    container_name: ready_for_fair_local_docs
+    build:
+      context: .
+      dockerfile: ./compose/local/docs/Dockerfile
+    env_file:
+      - ./.envs/.local/.django
+    volumes:
+      - ./docs:/docs:z
+      - ./config:/app/config:z
+      - ./ready_for_fair:/app/ready_for_fair:z
+    ports:
+      - '9000:9000'
+    command: /start-docs
