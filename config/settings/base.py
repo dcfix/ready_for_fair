@@ -99,7 +99,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "ready_for_fair.users",
-    "club",
+    "ready_for_fair.club",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

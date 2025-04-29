@@ -22,7 +22,7 @@ urlpatterns = [
     path("users/", include("ready_for_fair.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
-    path("club/", include("club.urls")),
+    path("club/", include("ready_for_fair.club.urls")),
     # ...
     # Media files
     *static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
